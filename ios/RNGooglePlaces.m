@@ -9,9 +9,7 @@
 #import <React/RCTConvert.h>
 
 #import <GooglePlaces/GooglePlaces.h>
-
-@import GooglePlaces;
-@import GoogleMaps;
+#import "GoogleMaps/GoogleMaps.h"
 
 @interface RNGooglePlaces() <CLLocationManagerDelegate>
 
@@ -57,6 +55,8 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(init: (NSString *) apiKey)
 {
+    // pass provideAPIKey from AppDelegate using cocoapods-keys
+    //  refer https://gist.github.com/animeshsinghweb/c4cf9cdf8bdd38a87d59273fc36dbe5a
     [GMSPlacesClient provideAPIKey:apiKey];
     [GMSServices provideAPIKey:apiKey];
 }

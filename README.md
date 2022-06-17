@@ -1,6 +1,18 @@
 # react-native-google-places
 iOS/Android Google Places Widgets (Autocomplete Modal) and API Services for React Native Apps
 
+===
+
+## For iOS
+Follow the instruction prescribed in <https://gist.github.com/animeshsinghweb/c4cf9cdf8bdd38a87d59273fc36dbe5a> for using react-native-google-places with cocoapods-keys with this library. 
+
+It serve as the verbose reference for ios the Steps described at the section named "Securing Your API Keys & Making Them Work With Your CI/CD Tools (Optional Steps)" at the end.
+
+
+Instead of passing the API_Key into the AppDelegate, we would use pods keys for security reasons.
+
+
+====
 ### **Notice: The Google Play Services version of the Places SDK for Android (in Google Play Services 16.0.0) is deprecated as of January 29, 2019, and will be turned off on July 29, 2019. A new version of the Places SDK for Android is now available. I suggest you read the documentations again and update your app to use v3.0.1 (or above) of this package**
 
 ## Shots
